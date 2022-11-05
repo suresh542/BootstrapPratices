@@ -1,0 +1,22 @@
+p {
+    color: red;
+    border: 10px solid;
+}
+
+* {
+    background-color: lightgray;
+}
+
+#para1 {
+    background-color: black;
+    color: white;
+}
+.para2 {
+    border: 10px solid blue;
+    border-radius: 25px;
+}
+
+.para3 {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

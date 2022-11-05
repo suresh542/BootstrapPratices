@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practices page 1</title>
+    <link rel="icon" href="./Image/kindpng_278320.png">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Bootstrapmainpage.html">
+    <style>
+        .thumbnail {
+            background-color: rgba(255, 255, 255, 0.6);
+            transition: transform .2s;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.09);
+            box-shadow: 3px 2px 8px black;
+        }
+
+        .logo {
+            position: absolute;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        #pagination1{
+            border-bottom-left-radius: 3px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="text-center well">
+        <div class="logo">
+            <a href="./Bootstrapmainpage.html"> <img src="./Image/kindpng_278320.png" alt="" width="70px" height="70px">
+            </a>
+        </div>
+        <h4> first we take CDN(content delivery network) type mean we need copy and paste the #3 Link head Tag</h4>
+        <ul class="pagination " >
+            <li class="active"><a href="./Bootstrap1.html">1</a></li>
+            <li><a href="./Bootstrap2.html">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
+
+
+    <div class="text-center ">
+        <h1> My First Bootstrap Page</h1>
+        <p>Resize this responsive page to see the effect!</p>
+        <h4>*(Here We give the class name is <ins><q>text-center </q></ins> for text is show in center off the page)
+        </h4>
+        <hr>
+        <div class="container well">
+            <h3 style="color:red" id="gird">1. Grid</h3>
+            <div class="row">
+                <div class="col-sm-4 well">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4 well">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4 well">
+                    <h3>Column 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <h4>*(in <ins><q>class</q></ins> inside we given the <ins><q>row</q></ins> & <ins><q>col</q></ins> )
+                </h4>
+                <h4>( <ins>1</ins> row have <ins>12</ins> col, we has divided like 6/6 || 4/4/4 || 3/3/3/3 ||
+                    2/2/2/2/2/2 && 4/8 || 5/7 || 3/9)</h4>
+                <h4>(col have <ins>4 Type</ins> <q>lg = lager</q><q>md = middel </q><q>sm = small</q><q>xs = extra
+                        small</q> )</h4>
+                <h3 style="color:blue">class="col-md-6 well" <span style="color:black">or</span> class="col-sm-6"</h3>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3>Pagination using Order List and UnorderList {ul class = "pagination"}</h3>
+            <p>We give{ li <ins><q>class = "active"</q> }</ins> mean background have blue color stable</p>
+            <ul class="pagination" id="pagination1">
+                <li><a href="https://mail.google.com/mail/u/0/">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li class="active"><a href="#">5</a></li>
+            </ul>
+        </div>
+        <div>
+            <ol class="pagination">
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ol>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <h3 style="color: red;"> 2. Text Properties & color</h3>
+        <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p class="bg-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <p class="bg-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        <h4>this are the text properties color, <span class="text-danger">(Primary, Success, info, warning, Danger,
+                muted)</span> color change in text and <abbr title="background">bg</abbr> </h4>
+        <p>text-lowercase, text-uppercase, text-capitalize </p>
+    </div>
+    <div class="text-center">
+        <p> class = "list-unstyled, list-inline" for the unorderlist remove the style and li in one line(inline)</p>
+        <ul class="list-unstyled, list-inline">
+            <li>sk1</li>
+            <li>sk2</li>
+            <li>sk3</li>
+            <li>sk4</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="container">
+        <h3 style="color: red;" class="text-center">3. Bootstrap Table</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <th>1. &lt;div&gt;</th>
+                    <th>2 &lt;table&gt;</th>
+                    <th>3. &lt;table&gt;</th>
+                    <th>4. &lt;table&gt;</th>
+                    <th>5. &lt;table&gt;</th>
+                    <th>6. &lt;table&gt;&lt;tr or td&gt;</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. <b>&lt;class="table-responsive"&gt;</b> its reduced width size the table gone
+                            automaticaly adjustment</td>
+                        <td>2. <b>&lt; calss = "table"&gt;</b> its creating the table</td>
+                        <td>3. <b>&lt;calss = "table-striped"&GT;</b> even number row getting the gray colour</td>
+                        <td>4. <b>&lt;calss= "table-bordered table-hover"&gt;</b> table get border and hover</td>
+                        <td>5. <b>&lt;calss = "table-condensed"&gt;</b> itd reduced unwanted padding</td>
+                        <td class="danger">6. <b>&lt;class= "table"&gt;&lt;class="primary (or) success (or) info (or)
+                                warning"&gt;
+                                its change the bg color inside pf table</b>> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3 style="color: red;" class="text-center">4. Bootstrap Image</h3>
+        <div class="container">
+            <p class="text-center">there are 3 type of image classes is for the show here </p>
+            <p class="text-center">1. &lt; img calss = "img-rounded" &gt;, 2. &lt;img class = "img-circle"&gt;, 3.
+                &lt;div class="thumbnail" &gt;</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./Image/wallpaper-photos-31.jpg" target="_blank">
+                            <img src="./Image/wallpaper-photos-31.jpg" alt="LED" width="300px" height="250px">
+                            <div class="caption">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./Image/Top-HD-Wallpaper-Download-Android-and-iPhone-Wallpaper-Download.jpeg"
+                            target="_blank">
+                            <img class="img-rounded"
+                                src="./Image/Top-HD-Wallpaper-Download-Android-and-iPhone-Wallpaper-Download.jpeg"
+                                width="100px" height="100px" alt="LOVE">
+                            <div class="caption">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="./Image/Beautiful-3D-Wallpapers-Wallpaper-Cave.jpg" target="_blank">
+                            <img class="img-circle" src="./Image/Beautiful-3D-Wallpapers-Wallpaper-Cave.jpg" width="300"
+                                height="250" alt="Candel">
+                            <div class="caption">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">&lt;iframe&gt;, &lt;embed&gt;, &lt;video&gt;, and &lt;object&gt; </p>
+            <p class="text-center"> <b>&lt;div class="embed-responsive embed-responsive-16by9"&gt; 16by9 na 16:9<br>
+                    &lt;iframe class="embed-responsive-item" src="..."&gt;&lt;/iframe&gt;
+                    <br>&lt;/div&gt;</b></p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="container">
+        <h3 style="color: red;" class="text-center">5. Bootstrap Button</h3>
+    </div>
+    <div class="text-center">
+        <button type="button" class="btn">Basic</button>
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-link">Link</button> <br> <br>
+        <a href="" class="btn btn-primary">anchor button</a>
+        <input type="submit" name="" id="" class="btn btn-success" value="save"> <br><br>
+        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-success btn-xs">Success</button> <br><br>
+        <button type="button" class="btn btn-warning btn-block">warning</button> <br><br>
+        <button type="button" class="btn btn-info active">Active info</button>
+        <button type="button" class="btn btn-danger disabled">Disabled danger</button><br> <br>
+
+
+        <p><b>class="btn",class="btn btn-default", class="btn btn-primary", class="btn btn-success", class="btn
+                btn-link"</b> </p>
+
+        <p><b>class="btn btn-primary btn-lg", 2. calss="btn btn-success btn-sm"</b></p>
+        <p><b>class="btn btn-warning btn-block"</b> this button covered total width in page</p>
+        <p><b>class="btn btn-warning btn-active" and class="btn btn-warning btn-disabled"</b> this btn used for </p>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <h3 style="color: red;">6. Button Group</h3>
+        <p>its display the button are join in to one by one </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button class="btn btn-primary">page 1 </button>
+                    <button class="btn btn-primary">page 2 </button>
+                    <button class="btn btn-primary">page 3 </button>
+                    <button class="btn btn-primary">page 4 </button>
+                    <p>&lt; div class="btn-group" &gt;</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group btn-group-lg">
+                    <button class="btn btn-primary">page 1 </button>
+                    <button class="btn btn-primary">page 2 </button>
+                    <button class="btn btn-primary">page 3 </button>
+                    <button class="btn btn-primary">page 4 </button>
+                    <p>&lt; div class="btn-group btn-group-lg" &gt;</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group-vertical">
+                    <button class="btn btn-primary">page 1 </button>
+                    <button class="btn btn-primary">page 2 </button>
+                    <button class="btn btn-primary">page 3 </button>
+                    <button class="btn btn-primary">page 4 </button>
+                    <p>&lt; div class="btn-group-vertical" &gt;</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="btn-group btn-group-justified">
+                    <a href="" class="btn btn-info">page 1</a>
+                    <a href="" class="btn btn-info">page 2</a>
+                    <a href="" class="btn btn-info">page 3</a>
+                    <a href="" class="btn btn-info">page 4</a>
+                </div>
+                <p>&lt; div class="btn-group btn-group-justified" &gt;</p>
+            </div>
+        </div>
+        <div class="btn-group btn-group-justified">
+            <a href="" class="btn btn-info">page 1</a>
+            <a href="" class="btn btn-info">page 2</a>
+            <a href="" class="btn btn-info">page 3</a>
+            <a href="" class="btn btn-info">page 4</a>
+        </div>
+        <div class="btn btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown">page 1 <span
+                    class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" root="menu">
+                <li><a href="#">sk</a></li>
+                <li><a href="#">k</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-danger">sk</button>
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">sk1</a></li>
+                <li><a href="#">sk2</a></li>
+                <li><a href="#">sk3</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <hr>
+   <div class="text-center">
+    <ul class="pagination ">
+        <li class="active"><a href="./Bootstrap1.html">1</a></li>
+        <li><a href="./Bootstrap2.html">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
+
+   </div>
+</body>
+
+</html>
